@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>调研成果 · 青年红色文化认知现状 | 京城红色足迹</title>
+  <meta name="description" content="北京邮电大学星火燎原队暑期社会实践问卷调研成果，呈现当代青年对红色文化的认知渠道、兴趣偏好与传播建议。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
+  <script src="js/survey-charts.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">红</span>
+        <span>京城红色足迹</span>
+      </a>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beida.html">北大红楼</a></li>
+        <li><a href="xiangshan.html">香山革命纪念馆</a></li>
+        <li><a href="tiananmen.html">天安门广场纪念碑</a></li>
+        <li><a href="survey.html" class="active">调研成果</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header" style="min-height: 360px;">
+    <div class="page-header-bg">
+      <img src="images/beida/北大红楼正门.jpg" alt="调研成果" loading="eager">
+    </div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <span class="page-header-tag">数据洞察</span>
+      <h1 class="page-header-title">青年红色文化认知调研</h1>
+      <p class="page-header-subtitle">以问卷为尺，丈量青年与红色文化的距离，探寻数字化传播的新路径。</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-white">
+      <div class="container">
+        <div class="survey-summary">
+          <h3>调研总结与传播建议</h3>
+          <p>本次调研共回收有效问卷108份，受访者以18-25岁青年为主体。数据显示，短视频与社交媒体已成为青年获取红色文化信息的首要渠道，实地参观与互动体验仍具有最强吸引力。基于此，我们建议：一是加强红色场馆数字化建设，打造可线上深度浏览的沉浸式展厅；二是善用短视频平台，以青年话语讲述红色故事；三是丰富互动体验形式，让红色文化从"看得到"走向"触得到"。</p>
+        </div>
+
+        <div class="survey-grid">
+          <div class="chart-card">
+            <h4>红色文化认知渠道分布</h4>
+            <div class="chart-wrapper">
+              <canvas id="channelChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4>红色文化传播形式吸引力</h4>
+            <div class="chart-wrapper">
+              <canvas id="interestChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <h2 class="section-title">关键发现</h2>
+        <div class="survey-grid" style="margin-top: 32px;">
+          <div class="chart-card">
+            <h4>红色景点参观经历</h4>
+            <div class="chart-wrapper">
+              <canvas id="visitChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4>线上红色内容偏好</h4>
+            <div class="chart-wrapper">
+              <canvas id="formatChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reflection">
+      <div class="container">
+        <div class="reflection-card">
+          <h3 class="reflection-title">调研手记</h3>
+          <p class="reflection-text">设计问卷的过程，也是一次重新理解红色文化传播的过程。我们发现，青年并非对红色文化漠然，而是反感生硬说教、期待鲜活表达。一位受访者在开放题中写道："希望红色故事能像纪录片一样有温度。"这句话让我们深受触动。实践团队希望，这座线上展馆能成为连接历史与青年的桥梁，让红色文化以更有温度、更具互动性的方式走进青年心里。</p>
+          <p class="reflection-author">—— 星火燎原队 宗敬伦</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>京城红色足迹 · 线上展馆</h3>
+          <p>北京邮电大学电子工程学院暑期社会实践成果<br>团队：星火燎原队<br>指导教师：刘昊</p>
+        </div>
+        <div>
+          <h4 class="footer-title">快速导航</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="beida.html">北大红楼</a></li>
+            <li><a href="xiangshan.html">香山革命纪念馆</a></li>
+            <li><a href="tiananmen.html">天安门广场纪念碑</a></li>
+            <li><a href="survey.html">调研成果</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">团队成员</h4>
+          <ul class="footer-links">
+            <li>宗敬伦 · 问卷与分析</li>
+            <li>许涌昊 · 网站与素材</li>
+            <li>王佳毅 · 拍摄与总结</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 星火燎原队 · 北京邮电大学社会实践项目</p>
+        <p class="footer-quote">以青春之我，传红色薪火</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="关闭">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button class="lightbox-prev" aria-label="上一张">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <img class="lightbox-img" src="" alt="">
+    <button class="lightbox-next" aria-label="下一张">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
